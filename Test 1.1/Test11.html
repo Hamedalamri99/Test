@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamed Web Page</title>
+    <style>
+        /* General Styles */
+        body {
+            background-color: #e3d6d9; /* Light gray background */
+            font-family: 'Arial', sans-serif; /* Arial font */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Style */
+        header {
+            background-image: url('https://thumbs.dreamstime.com/b/bacon-cheese-burger-beef-patty-tomato-onion-pizza-mozzarella-ham-tomatoes-salami-pepper-pepperoni-spices-fresh-basil-123768697.jpg');
+            background-size: cover;
+            color: #ffffff; /* White color for text */
+            text-align: center;
+            padding: 80px 20px; /* Increased padding for better spacing */
+            margin: 0;
+        }
+
+        header h1 {
+            font-size: 3em;  /* Larger size for restaurant name */
+            font-weight: bold;  /* Bold text to make it stand out */
+            text-transform: uppercase; /* Uppercase letters for prominence */
+            letter-spacing: 5px; /* Spacing between letters */
+            margin: 0;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            font-style: italic;
+            color: #ffffff; /* Light color for the tagline */
+            margin-top: 10px;
+            font-family: 'Times New Roman', serif; /* Different font style for the tagline */
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            background-color: #333; /* Dark background */
+            overflow: hidden;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none; /* Remove list bullets */
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline; /* Display the links horizontally */
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: rgb(3, 3, 3);
+        }
+
+        /* Grid Layout for Main Content */
+        main {
+            display: grid;
+            grid-template-columns: 1fr; /* One column layout by default */
+            grid-gap: 20px; /* Space between sections */
+            padding: 20px;
+        }
+
+        /* Menu Section Styling */
+        section#menu {
+            grid-column: 1 / -1; /* Make the menu section span the entire width of the grid */
+        }
+
+        .menu-category {
+            margin-bottom: 20px;
+            background-color: #f9f9f9; /* Light background for categories */
+            border: 1px solid #ddd; /* Border around each category */
+            padding: 10px;
+            text-align: center;
+        }
+
+        .menu-category h3 {
+            font-size: 1.8em;
+            color: #60082b;
+        }
+
+        .menu-item {
+            margin: 10px 0;
+            font-size: 1.2em;
+            border-bottom: 1px solid #eac8c8; /* Border between items */
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        .menu-item:hover {
+            background-color: #e46f6f;  /* Light gray background on hover */
+            color: #60082b;  /* Change text color to match the price */
+            cursor: pointer;  /* Change cursor to pointer to indicate it's clickable */
+        }
+
+        .menu-item img {
+            width: 50px; /* Set the width of the food images */
+            height: 50px; /* Maintain aspect ratio */
+            margin-right: 15px; /* Space between image and text */
+        }
+
+        .price {
+            color: #60082b;
+        }
+
+        /* Contact Section Styling */
+        section#contact {
+            background-color: #f4f4f4; /* Light background to differentiate it */
+            padding: 30px 20px; /* Increased padding for better spacing */
+            text-align: center;
+            margin-top: 20px;
+            grid-column: 1 / -1; /* Make the contact section span the entire width of the grid */
+        }
+
+        .contact-info {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .email-link {
+            color: #60082b;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333; /* Dark background */
+            color: white;            /* Light text color */
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 30px;        /* Space between content and footer */
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+
+        .social-links a:hover {
+            color: #ddd; /* Change color on hover */
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            /* Adjust layout for smaller screens */
+            main {
+                grid-template-columns: 1fr; /* One column layout on smaller screens */
+            }
+
+            nav ul {
+                padding: 0;
+                margin: 0;
+            }
+
+            nav ul li {
+                display: block; /* Make the nav items stack vertically */
+            }
+
+            .menu-category {
+                padding: 15px;
+            }
+
+            .menu-item {
+                font-size: 1em; /* Slightly smaller text for better readability on small screens */
+            }
+
+            .contact-info {
+                font-size: 1em;
+            }
+        }
+
+        /* Ensure the footer stays at the bottom */
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        main {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Pizza&BurgerMuscat</h1>
+            <p class="tagline"></p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Menu Section -->
+        <section id="menu">
+            <h2>Menu</h2>
+
+            <!-- Appetizers -->
+            <div class="menu-category">
+                <h3>Appetizers</h3>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OIP.AMZssV-mMaTxvseUc8Oa7wHaGQ?rs=1&pid=ImgDetMain" alt="Garlic Bread">
+                    <span>Garlic Bread</span>
+                    <span class="price">0.9 OMR</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OIP.64PyasqFQbScY2kk21_U4wHaEK?rs=1&pid=ImgDetMain" alt="Mozzarella Sticks">
+                    <span>Mozzarella Sticks</span>
+                    <span class="price">1.1 OMR</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OIP.MtayC8VQufG_qMp3tXnFRgHaFc?rs=1&pid=ImgDetMain" alt="French Fries">
+                    <span>French Fries</span>
+                    <span class="price">0.8 OMR</span>
+                </div>
+            </div>
+
+            <!-- Main Course -->
+            <div class="menu-category">
+                <h3>Main Course</h3>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OIP.hcnoWAX2r1qciCV_y6_GGwHaE6?rs=1&pid=ImgDetMain" alt="Margherita Pizza">
+                    <span>Margherita Pizza</span>
+                    <span class="price">1.6 OMR</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OIP.NL4LVyf-kt7HuJydqv7QMAHaE8?rs=1&pid=ImgDetMain" alt="Cheeseburger">
+                    <span>Cheeseburger</span>
+                    <span class="price">1.8 OMR</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OIP.D-CrCFm5OSRi_pzqlRjfXQHaE8?rs=1&pid=ImgDetMain" alt="Veggie Burger">
+                    <span>Veggie Burger</span>
+                    <span class="price">1.5 OMR</span>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="menu-category">
+                <h3>Desserts</h3>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/R.170fb5f7d868534a9cb851c42fd55ff3?rik=OP77eYInFvrAsA&pid=ImgRaw&r=0" alt="Chocolate Cake">
+                    <span>Chocolate Cake</span>
+                    <span class="price">1.6 OMR</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/R.41ab5414b8b278d20f01c38030b6a1ac?rik=meGp968eP8vl2g&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f7%2f7b%2fIce_Cream_Sundae.jpg&ehk=Tfs3cFuCFK5AaxGj2DvxNMT9Yvh9fZmpQZyBK3y0uL8%3d&risl=&pid=ImgRaw&r=0" alt="Ice Cream Sundae">
+                    <span>Ice Cream Sundae</span>
+                    <span class="price">1.6 OMR</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/R.faeadf7a9bf9cd1eca0b3a2da08d6ecb?rik=PD2FLm0xc9n%2bJg&pid=ImgRaw&r=0" alt="Apple Pie">
+                    <span>Apple Pie</span>
+                    <span class="price">1.6 OMR</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p>Phone: +968 123 4567</p>
+                <p>Email: <a class="email-link" href="mailto:info@pizzaandburgermuscat.com">info@pizzaandburgermuscat.com</a></p>
+            </div>
+            <p>Click the email link to send us an email or sign in to Gmail!</p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Pizza & Burger Muscat. All rights reserved.</p>
+        <p>Location: Muscat, Sultanate of Oman</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/sohailmaidia" target="_blank">Facebook</a> |
+            <a href="https://twitter.com/sohailmaidia" target="_blank">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
