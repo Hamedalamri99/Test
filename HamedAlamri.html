@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Hamed.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamed Alamri - CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function validateEmail() {
+            var email = document.getElementById("email").value;
+            var emailError = document.getElementById("emailError");
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+            if (!emailPattern.test(email)) {
+                emailError.style.display = "block";
+                return false;
+            } else {
+                emailError.style.display = "none";
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+  <header>
+    <div class="logo">Hamed Yahya Salim Alamri</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <div class="about">
+      <img src="file:///C:/Users/codel/Downloads/person-fill.svg" alt="Hamed Alamri">
+      <div class="about-text">
+        <h2>Hamed Alamri</h2>
+        <p>As a Network Engineer, I have a robust background in managing and optimizing network systems. I am well-versed in VMware vCenter, 
+            DNS, Active Directory, Windows Server, and Linux environments. I am adept at troubleshooting, configuring, and enhancing network 
+            performance. I have a strong understanding of security best practices and am committed to maintaining reliable network operations. I 
+            have experience in adapting to risks, designing data centers, and integrating modern technologies into the network. I demonstrate 
+            adaptability to new technologies and am dedicated to efficient and secure network management.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div>
+        <img src="https://img.icons8.com/color/96/000000/vmware.png" alt="VMware icon">
+        <p>VMware</p>
+      </div>
+      <div>
+        <img src="https://img.icons8.com/color/96/000000/linux--v1.png" alt="Linux icon">
+        <p>Linux</p>
+      </div>
+      <div>
+        <img src="https://img.icons8.com/color/96/000000/windows-10.png" alt="Windows Server icon">
+        <p>Windows Server</p>
+      </div>
+      <div>
+        <img src="https://www.elmhurst.edu/wp-content/uploads/2020/05/computer-networking-system-administration-2-illustration.jpg" alt="System Administration icon">
+        <p>System Administration</p>
+      </div>
+      <div>
+        <img src="https://th.bing.com/th/id/R.5347b61cb745701f8801b7866dbb3017?rik=QpOTbvvn1OMtfA&riu=http%3a%2f%2fwww.storagenewsletter.com%2fwp-content%2fuploads%2f2015%2f06%2fDRUVA_user-data-archive-786x528-v2.jpg&ehk=U4%2b1hU1Jpq0xnREP%2bE2KCOfePXakk5DleO3jdWm3hfs%3d&risl=&pid=ImgRaw&r=0" alt="Microsoft 365 icon">
+        <p>Microsoft 365</p>
+      </div>
+      <div>
+        <img src="https://img.icons8.com/color/96/000000/networking-manager.png" alt="Networking icon">
+        <p>Networking</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item left">
+        <div class="timeline-item-content">
+          <h3>IT Technician Trainee</h3>
+          <p><strong>Karwa Motors Oman LLC</strong> (11/2023 – 03/2024)</p>
+          <p>IT Technician Trainee, Department of Information Technology and Networks</p>
+          <ul>
+            <li>Provided comprehensive technical support to end-users, resolving hardware and software issues efficiently.</li>
+            <li>Managed and configured cloud services, including Microsoft 365 and Cisco Meraki, to ensure seamless network operations.</li>
+            <li>Collaborated with team members to develop and implement IT solutions that improved overall productivity.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="timeline-item-content">
+          <h3>IT Technician Trainee</h3>
+          <p><strong>Royal Air Force of Oman</strong> (02/2023 – 04/2023)</p>
+          <p>IT Technician Trainee, Department of Information Technology and Networks</p>
+          <ul>
+            <li>Configured and maintained network infrastructure, ensuring reliable and secure communication channels.</li>
+            <li>Conducted server cabling and configuration, optimizing server performance and connectivity.</li>
+            <li>Administered and managed Kali Linux and Ubuntu Linux systems, ensuring efficient and secure operation.</li>
+            <li>Supported IT team in troubleshooting network issues, minimizing downtime and enhancing operational efficiency.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item left">
+        <div class="timeline-item-content">
+          <h3>IT Technician Trainee</h3>
+          <p><strong>Ministry of Higher Education, Muscat</strong> (09/2022 – 02/2023)</p>
+          <p>IT Technician Trainee, Department of Networks, Systems Engineering and Support</p>
+          <ul>
+            <li>Installed new operating systems and configured software applications, ensuring optimal system performance.</li>
+            <li>Troubleshooted and resolved issues with PCs, Windows environments, printers, and photocopy machines.</li>
+            <li>Assisted in the setup and maintenance of network equipment, including switches, routers, and access points.</li>
+            <li>Provided user training and support, enhancing staff proficiency with IT systems and applications.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education-item">
+        <h3>Bachelor of Engineering (Hons) in Computer Engineering (Networking)</h3>
+        <p><strong>Middle East College</strong>, Muscat, Sultanate of Oman</p>
+        <p><strong>Graduation Year:</strong> 2024</p>
+        <p><strong>CGPA:</strong> 3.25/4</p>
+    </div>
+    <div class="education-item">
+        <h3>Diploma in Computer Engineering</h3>
+        <p><strong>University of Technology and Applied Sciences</strong>, Muscat, Sultanate of Oman</p>
+        <p><strong>Graduation Year:</strong> 2022</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-container">
+      <div class="project-details">
+        <h3>Deployment of Data Center Virtualization</h3>
+        <p><strong>For Middle East Electronics Company LLC</strong></p>
+        <ul>
+          <li>Design and implement a scalable, efficient data center virtualization solution to modernize IT infrastructure.</li>
+          <li>Leverage VMware vCenter to optimize resource allocation, improve server performance, and streamline management.</li>
+          <li>Reduce hardware costs by consolidating physical servers into virtual machines, improving overall efficiency.</li>
+          <li>Enhance operational flexibility to support future company growth and evolving business needs.</li>
+        </ul>
+      </div>
+      <img src="https://www.exasys.com/files/Content/Images/virtualisierung-vmware-grafik-1-800x600.jpg.res-800x600.jpg" alt="Project image">
+    </div>
+  </section>
+  <section id="courses">
+    <h2>Courses</h2>
+    <div class="course-item">
+        <h3>Introduction to Internet of Things (IOT)</h3>
+        <p><strong>Cisco</strong></p>
+        <p><strong>Duration:</strong> 09/2023 – 10/2023</p>
+    </div>
+    <div class="course-item">
+        <h3>Data Center Virtualization 2024 [v2] (VCP-DCV)</h3>
+        <p><strong>VMware</strong></p>
+        <p><strong>Duration:</strong> 03/2024 – 06/2024</p>
+    </div>
+    <div class="course-item">
+        <h3>Cisco Certified Network Associate (CCNA)</h3>
+        <p><strong>Cisco</strong></p>
+        <p><strong>Duration:</strong> 06/2024 – Present</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-container">
+        <!-- Contact Form (left side) -->
+        <div class="contact-form">
+            <h3>Contact Me</h3>
+            <form id="contactForm" action="#" method="POST" onsubmit="return validateEmail()">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <small id="emailError" style="color: red; display: none;">Please enter a valid email.</small>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Map (left side) -->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7891.994132560236!2d58.56805157429164!3d23.588003601699854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e8ee27ef6451cc3%3A0x6a95b2b0da91e45f!2sMuscat%2C%20Oman!5e0!3m2!1sen!2som!4v1681303426345!5m2!1sen!2som" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <!-- Contact Icons (centered below the map) -->
+        <div class="contact-icons">
+            <a href="https://wa.me/96899087810" target="_blank" class="icon" title="WhatsApp">
+                <img src="https://img.icons8.com/color/48/whatsapp.png" alt="WhatsApp Icon">
+            </a>
+            <a href="mailto:Hamed.y99k@gmail.com" class="icon" title="Email">
+                <img src="https://img.icons8.com/color/48/gmail.png" alt="Email Icon">
+            </a>
+            <a href="tel:+96899087810" class="icon" title="Phone">
+                <img src="https://img.icons8.com/color/48/phone.png" alt="Phone Icon">
+            </a>
+            <a href="https://linkedin.com/in/hamed-alamri" target="_blank" class="icon" title="LinkedIn">
+                <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn Icon">
+            </a>
+            <a href="https://github.com/Hamedalamri99" target="_blank" class="icon" title="GitHub">
+                <img src="https://img.icons8.com/color/48/github.png" alt="GitHub Icon">
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+
+  <footer>
+    <p>© 2025 Hamed Yahya Salim Alamri. All rights reserved.</p>
+  </footer>
+</body>
+</html>
