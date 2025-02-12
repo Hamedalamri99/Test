@@ -40,7 +40,52 @@ header nav ul li a {
     font-size: 1rem;
     transition: color 0.3s ease;
 }
-
+/* Sticky Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #070606;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 20px;
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fafafa;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 0.5px;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #007bff;
+  }
+  
+  /* To prevent content from hiding behind the fixed header */
+  body {
+    padding-top: 70px;
+  }
+  
 /* Hover effect for navigation links */
 header nav ul li a:hover {
     color: #feb705;
